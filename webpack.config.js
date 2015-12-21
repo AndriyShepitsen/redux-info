@@ -40,7 +40,7 @@ if (process.env.NODE_ENV === 'production') {
       }),
       new ExtractTextPlugin("app.css"),
       new webpack.optimize.UglifyJsPlugin({minimize: true})
-    ]  
+    ]
   });
 
 }else{
@@ -82,14 +82,18 @@ if (process.env.NODE_ENV === 'production') {
       { test: /\.css$/, loader: 'style-loader!css-loader' }
     ]},
     entry : [
-      'webpack-hot-middleware/client',
+      'webpack-hot-middleware/client?reload=true',
       './src/client/index.js'
     ],
+    watchOptions: {
+      aggregateTimeout: 300,
+      poll: 1000
+    },
     plugins : [
       new webpack.HotModuleReplacementPlugin()
-    ]  
+    ]
   });
-  
+
 }
 
 module.exports = webpackConfig;
