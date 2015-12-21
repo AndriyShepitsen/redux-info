@@ -14,12 +14,12 @@ import AboutPage from "./components/About";
 import error404 from "./components/404";
 
 export default (
-  <Route name="app" path="/" component={App}>
-      <Route path="home" component={HomePage} />
-      <Route path="reddit" component={RedditPage} />
-      <Route path="todo" component={TodoPage} />
-      <Route path="counter" component={CounterPage} />
-      <Route path="about" component={AboutPage} />
-      <Route path="*" component={error404}/>
-  </Route>
+    <Route name="app" path="/" component={App}>
+        <Route path="home" component={HomePage}/>
+        <Route path="reddit" component={RedditPage}/>
+        <Route path="todo" component={TodoPage}/>
+        <Route path="counter" component={CounterPage}/>
+        <Route path="about" component={AboutPage}/>
+        <Route path="*" component={error404}/>
+    </Route>
 );
