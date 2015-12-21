@@ -11,6 +11,7 @@ import TodoPage from "./containers/TodoPage";
 //Redux Dumb
 import HomePage from "./components/Home";
 import AboutPage from "./components/About";
+import BlogPage from "./components/Blog";
 import error404 from "./components/404";
 
 export default (
@@ -20,6 +21,7 @@ export default (
         <Route path="todo" component={TodoPage}/>
         <Route path="counter" component={CounterPage}/>
         <Route path="about" component={AboutPage}/>
+        <Route path="blog" component={BlogPage}/>
         <Route path="*" component={error404}/>
     </Route>
 );

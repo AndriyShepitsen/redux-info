@@ -26,6 +26,7 @@ class Sidebar extends Component {
 		    <Link to="/reddit" className="sidebar-nav-item" activeClassName="active">Reddit <span className="nav-note">[api]</span></Link>
 		    <Link to="/todo" className="sidebar-nav-item" activeClassName="active">Todo <span className="nav-note">[stateful]</span></Link>
 		    <Link to="/counter" className="sidebar-nav-item" activeClassName="active">Counter <span className="nav-note">[stateful]</span></Link>
+		    <Link to="/blog" className="sidebar-nav-item" activeClassName="active">Blog <span className="nav-note">[static]</span></Link>
 		    <Link to="/about" className="sidebar-nav-item" activeClassName="active">About <span className="nav-note">[static]</span></Link>
 		    <span className="sidebar-nav-item"><span className="nav-note version">{`Currently version ${version}`}</span></span>
 		  </nav>
@@ -33,7 +34,7 @@ class Sidebar extends Component {
 		  <div className="sidebar-item sidebar-footer">
 		    <p>
 				Visit <a href="https://github.com/caljrimmer/isomorphic-redux-app">GitHub Repo</a><br/>
-				Based on <a href="http://lanyon.getpoole.com/"> Lanyon Theme</a> 
+				Based on <a href="http://lanyon.getpoole.com/"> Lanyon Theme</a>
 		    </p>
 		  </div>
 
