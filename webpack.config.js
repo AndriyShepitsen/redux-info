@@ -55,7 +55,7 @@ if (process.env.NODE_ENV === 'production') {
         include: __dirname,
         query: {
           optional: ['runtime'],
-          stage: 2,
+          stage: 1,
           env: {
             development: {
               plugins: [
