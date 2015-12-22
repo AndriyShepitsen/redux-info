@@ -8,7 +8,7 @@ export default class Blog extends Component {
         return (
             <div className="posts">
 
-                <Button size="sm" kind="primary">+ Article</Button>
+                <Button size="sm" kind="primary">Article</Button>
 
                 <h1 className="post-title">Blog</h1>
             </div>
