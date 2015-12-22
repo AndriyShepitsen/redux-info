@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Radium from 'radium';
 import Button from './buttons/Button.js';
 
-@Radium
 export default class Blog extends Component {
 
     render() {

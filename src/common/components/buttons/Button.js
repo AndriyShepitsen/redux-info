@@ -4,7 +4,6 @@ import Radium from 'radium';
 import colors from '../../../../settings/colors.js';
 import elements from '../../../../settings/elements.js';
 
-@Radium
 export default class Button extends React.Component {
     constructor(props) {
         super(props);

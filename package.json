@@ -1,4 +1,3 @@
-
 {
   "name": "isomorphic-redux-app",
   "version": "0.1.1",
@@ -6,10 +5,10 @@
   "scripts": {
     "slate": "rimraf -rf node_modules && npm install",
     "clean": "rimraf -rf dist",
-    "start": "set NODE_ENV=development && node src/server/index.js --progress --colors --profile",
+    "start": "set NODE_ENV=development&&node src/server/index.js --progress --colors --profile",
     "start-prod": "set NODE_ENV=production && node src/server/index.js --progress --colors --profile",
     "build": "npm run clean && set NODE_ENV=production && webpack -p --progress --colors --profile",
-    "test" : "set NODE_ENV=test ** mocha --compilers js:babel/register --recursive"
+    "test": "set NODE_ENV=test ** mocha --compilers js:babel/register --recursive"
   },
   "repository": {
     "type": "git",
@@ -28,14 +27,14 @@
     "redux": "^3.0.0",
     "redux-thunk": "^0.1.0",
     "redux-undo": "^0.5.0",
-    "classnames" : "^2.1.5",
-    "axios" : "^0.7.0"
+    "classnames": "^2.1.5",
+    "axios": "^0.7.0"
   },
   "devDependencies": {
     "babel-core": "^5.8.22",
     "babel-loader": "^5.3.2",
     "redux-devtools": "^2.1.5",
-    "redux-logger" : "^2.0.2",
+    "redux-logger": "^2.0.2",
     "babel-plugin-react-transform": "^1.1.0",
     "babel-runtime": "^5.8.20",
     "webpack": "1.4.13",
@@ -46,10 +45,10 @@
     "react-transform-hmr": "^1.0.0",
     "webpack-dev-middleware": "^1.2.0",
     "webpack-hot-middleware": "^2.2.0",
-    "react-transform-catch-errors" : "^1.0.0",
-    "redbox-react" : "^1.1.0",
-    "merge":"^1.2.0",
-    "extract-text-webpack-plugin" : "^0.8.2",
+    "react-transform-catch-errors": "^1.0.0",
+    "redbox-react": "^1.1.0",
+    "merge": "^1.2.0",
+    "extract-text-webpack-plugin": "^0.8.2",
     "jsdom-no-contextify": "^3.1.0",
     "mocha": "^2.1.0",
     "expect": "^1.12.1"
