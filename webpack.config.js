@@ -18,7 +18,6 @@ var webpackConfig = {
 if (process.env.NODE_ENV === 'production') {
 
   webpackConfig = merge(webpackConfig,{
-    devtool: "source-map",
     entry : [
       './src/client/index.js'
     ],
