@@ -15,6 +15,7 @@ import configureStore from '../common/store/configureStore';
 import { getUser } from '../common/api/user';
 import routes from '../common/routes';
 import packagejson from '../../package.json';
+delete process.env.BROWSER;
 
 const app = express();
 const renderFullPage = (html, initialState) => {

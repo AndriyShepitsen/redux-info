@@ -8,7 +8,15 @@ import elements from '../../../../../settings/elements.js';
 class ButtonLink extends React.Component {
     constructor(props) {
         super(props);
+    }
 
+    componentWillMount() {
+
+    }
+
+    componentDidMount() {
+
+        require('./ButtonLinkStyles.css');
     }
 
     render() {
