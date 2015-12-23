@@ -1,7 +1,7 @@
 import React from 'react';
 import Radium from 'radium';
 
-export default class UploadPictures extends React.Component {
+class UploadPictures extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -21,5 +21,6 @@ export default class UploadPictures extends React.Component {
             </div>
         )
     }
-};
-
+}
+;
+export default Radium(UploadPictures);

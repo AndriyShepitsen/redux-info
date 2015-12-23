@@ -3,15 +3,16 @@ import Radium from 'radium';
 /*Styles*/
 import colors from '../../../../settings/colors.js';
 import elements from '../../../../settings/elements.js';
+import typography from '../../../../settings/typography.js';
 
-export default class Button extends React.Component {
+class Button extends React.Component {
     constructor(props) {
         super(props);
     }
 
     render() {
         return (
-            <div style={[styles.wrapper]}>
+            <div id="ButtonWrapper" style={[styles.wrapper]}>
                 <button key="articleBtn"
                         style={[styles.base,
                         styles[this.props.type],
@@ -41,7 +42,7 @@ var styles = {
     },
     tip: {
         padding: '4px 6px',
-        position: 'absolute',
+        position: 'relative',
         fontSize: 12,
         background: colors.grey700,
         color: colors.grey50,
@@ -52,12 +53,10 @@ var styles = {
     },
     base: {
         display: 'inline-block',
+        marginBottom: 4,
         height: '38px',
-        padding: ' 0 30',
         textAlign: 'center',
-        fontSize: 10,
         fontWeight: 500,
-        lineHeight: 38,
         letterSpacing: '.1rem',
         textTransform: 'uppercase',
         textDecoration: 'none',
@@ -181,3 +180,4 @@ var styles = {
 
 };
 
+export default Radium(Button);

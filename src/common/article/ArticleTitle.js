@@ -3,7 +3,7 @@ import Radium from 'radium';
 /*Styles*/
 import layout from '../../../settings/layout.js';
 
-export default class ArticleTitle extends React.Component {
+class ArticleTitle extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -23,7 +23,8 @@ export default class ArticleTitle extends React.Component {
             </div>
         )
     }
-};
+}
+;
 
 var styles = {
     titleStyles: {
@@ -33,3 +34,4 @@ var styles = {
         width: '100%'
     }
 };
+export default Radium(ArticleTitle);

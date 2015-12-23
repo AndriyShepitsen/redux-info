@@ -5,7 +5,7 @@ import colors from '../../../settings/colors.js';
 import layout from '../../../settings/layout.js';
 import typography from '../../../settings/typography.js';
 
-export default class AddVideo extends React.Component {
+class AddVideo extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -22,10 +22,12 @@ export default class AddVideo extends React.Component {
             </div>
         )
     }
-};
+}
+;
 
 var styles = {
     base: {
         color: colors.blue600
     }
 };
+export default Radium(AddVideo);

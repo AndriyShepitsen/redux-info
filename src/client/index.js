@@ -1,8 +1,8 @@
 import 'babel-core/polyfill';
 
 import React from 'react';
-import { Router } from 'react-router';
 import { Provider } from 'react-redux';
+import { Router } from 'react-router';
 import { ReduxRouter } from 'redux-router';
 
 import createBrowserHistory from 'history/lib/createBrowserHistory'
@@ -18,16 +18,16 @@ const store = configureStore(initialState);
 const rootElement = document.getElementById('root');
 
 React.render(
-  <Provider store={store}>
-    {() =>
-        <ReduxRouter>
-          <Router children={routes} history={history} />
-        </ReduxRouter>
-    }
-  </Provider>,
-  document.getElementById('root')
+    <Provider store={store}>
+        {() =>
+            <ReduxRouter>
+                <Router children={routes} history={history}/>
+            </ReduxRouter>
+        }
+    </Provider>,
+    document.getElementById('root')
 );
 
 if (process.env.NODE_ENV !== 'production') {
-  require('../server/devtools')(store);
+    require('../server/devtools')(store);
 }

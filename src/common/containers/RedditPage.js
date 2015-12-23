@@ -1,7 +1,7 @@
 import { bindActionCreators } from 'redux';
 import React, { Component} from 'react';
 import { connect } from 'react-redux';
-import Reddit from '../components/Reddit';
+import Reddit from '../components/reddit/Reddit';
 import * as RedditActions from '../actions/reddit';
 
 //Data that needs to be called before rendering the component

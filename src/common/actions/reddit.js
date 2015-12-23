@@ -18,6 +18,7 @@ export function selectReddit(reddit) {
 export function invalidateReddit(reddit) {
   return {
     type: INVALIDATE_REDDIT,
+    // es6 way of setting property and value with the same name
     reddit
   };
 }

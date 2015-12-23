@@ -1,14 +1,21 @@
 import React, { Component } from 'react';
 import Radium from 'radium';
-import Button from './buttons/Button.js';
+import ButtonLink from './buttons/link/ButtonLink.js';
 
-export default class Blog extends Component {
+class Blog extends Component {
+
+    constructor(props) {
+        super(props);
+
+    }
 
     render() {
         return (
             <div className="posts">
 
-                <Button size="sm" kind="primary">Article</Button>
+                <ButtonLink url="/add-article" cssClass="button-primary" size="md" kind="success">
+                    Add Article
+                </ButtonLink>
 
                 <h1 className="post-title">Blog</h1>
             </div>
@@ -16,4 +23,4 @@ export default class Blog extends Component {
         );
     }
 }
-
+export default Radium(Blog);

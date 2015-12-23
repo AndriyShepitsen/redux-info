@@ -3,7 +3,7 @@ import Radium from 'radium';
 /*Styles*/
 import layout from '../../../settings/layout.js';
 
-export default class ArticleContet extends React.Component {
+class ArticleContet extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -32,3 +32,4 @@ var styles = {
         minHeight: 200
     },
 };
+export default Radium(ArticleContet);

@@ -5,11 +5,12 @@ import ArticleTitle from './ArticleTitle';
 import ArticleContent from './ArticleContent';
 import UploadPictures from './UploadPictures';
 import AddVideo from './AddVideo';
-import Button from '../components/buttons/Button';
+import Button from '../components/buttons/Button.js';
 /*Styles*/
 import typography from '../../../settings/typography.js';
 
-export default class ArticleForm extends React.Component {
+
+class ArticleForm extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -24,7 +25,7 @@ export default class ArticleForm extends React.Component {
                 }}/>
                 <h2>New Article</h2>
                 <form >
-                    <Button size="m" kind="primary">Submit</Button>
+                    <Button size="md">Submit</Button>
                     <ArticleTitle/>
                     <ArticleContent/>
                     <UploadPictures/>
@@ -33,4 +34,7 @@ export default class ArticleForm extends React.Component {
             </div>
         )
     }
-};
+}
+;
+
+export default Radium(ArticleForm);

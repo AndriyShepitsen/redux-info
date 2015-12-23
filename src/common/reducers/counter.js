@@ -5,7 +5,10 @@ export default function counter(state = 0, action) {
         case SET_COUNTER:
             return action.payload, 10;
         case INCREMENT_COUNTER:
-            return state + 1;
+            //if (state === 10) {
+            //    throw new Error('Bad Error')
+            //}
+            return state + 10;
         case DECREMENT_COUNTER:
             return state - 1;
         default:
