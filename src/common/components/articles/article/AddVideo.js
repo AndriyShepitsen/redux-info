@@ -1,9 +1,9 @@
 import React from 'react';
 import Radium from 'radium';
 /*Styles*/
-import colors from '../../../settings/colors.js';
-import layout from '../../../settings/layout.js';
-import typography from '../../../settings/typography.js';
+import colors from '../../settings/colors.js';
+import layout from '../../settings/layout.js';
+import typography from '../../settings/typography.js';
 
 class AddVideo extends React.Component {
     constructor(props) {

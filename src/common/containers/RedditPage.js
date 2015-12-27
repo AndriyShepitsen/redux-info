@@ -1,5 +1,4 @@
 import { bindActionCreators } from 'redux';
-import React, { Component} from 'react';
 import { connect } from 'react-redux';
 import Reddit from '../components/reddit/Reddit';
 import * as RedditActions from '../actions/reddit';
@@ -9,7 +8,7 @@ import * as RedditActions from '../actions/reddit';
 Reddit.need = [
   RedditActions.fetchPosts
 ]
-
+/* Binds Store and Dumb component, so it can get access via (this.props) to the store data. */
 function mapStateToProps(state) {
   let { selectedReddit, postsByReddit } = state;
   selectedReddit = selectedReddit.present;
@@ -33,7 +32,8 @@ function mapStateToProps(state) {
     error
   };
 }
-
+/* Binds actions to the store dispatch methods,
+so dumb component can react on user actions and dispatch them */
 function mapDispatchToProps(dispatch) {
   return bindActionCreators(RedditActions, dispatch);
 }

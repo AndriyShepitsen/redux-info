@@ -1,15 +1,20 @@
 import { createStore, applyMiddleware, compose } from 'redux';
 import { devTools } from 'redux-devtools';
 import { reduxReactRouter } from 'redux-router';
-import thunk from 'redux-thunk';
 import createHistory from 'history/lib/createBrowserHistory';
-import createLogger from 'redux-logger';
-import promiseMiddleware from '../api/promiseMiddleware';
+
 import rootReducer from '../reducers/index';
 
-const middlewareBuilder = () => {
+import thunk from 'redux-thunk';
+import createLogger from 'redux-logger';
+import promiseMiddleware from '../api/promiseMiddleware';
 
+/*MIDDLEWARE WILL ALWAYS HANDLE ACTION FIRST*/
+/*handle async actions*/
+/*manage logging functionality*/
+const middlewareBuilder = () => {
     let middleware = {};
+    /*thunk convert action creator function to the action object to pass it further*/
     let universalMiddleware = [thunk, promiseMiddleware];
     let allComposeElements = [];
 
@@ -51,6 +56,8 @@ const finalCreateStore = compose(...middlewareBuilder())(createStore);
 
 export default function configureStore(initialState) {
     const store = finalCreateStore(rootReducer, initialState);
+    let svReducer = store.getReducer();
+    debugger;
 
     if (module.hot) {
         // Enable Webpack hot module replacement for reducers

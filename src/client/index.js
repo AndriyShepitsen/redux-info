@@ -13,9 +13,11 @@ import routes from '../common/routes';
 import "../../styles/index.css";
 
 const history = createBrowserHistory();
+/*Global object */
 const initialState = window.__INITIAL_STATE__;
-const store = configureStore(initialState);
 const rootElement = document.getElementById('root');
+
+const store = configureStore(initialState);
 
 React.render(
     <Provider store={store}>

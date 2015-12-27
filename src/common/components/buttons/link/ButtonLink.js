@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router';
 import Radium from 'radium';
 /*Styles*/
-import colors from '../../../../../settings/colors.js';
-import elements from '../../../../../settings/elements.js';
+import colors from '../../settings/colors.js';
+import elements from '../../settings/elements.js';
 
 class ButtonLink extends React.Component {
     constructor(props) {

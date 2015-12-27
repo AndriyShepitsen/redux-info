@@ -1,6 +1,5 @@
 import React from 'react';
-import ArticleForm from '../../article/ArticleForm.js';
-
+import ArticleForm from './ArticleForm.js';
 
 export default class AddArticle extends React.Component {
     // Constructor
@@ -14,9 +13,7 @@ export default class AddArticle extends React.Component {
         return (
             <div>
                 <ArticleForm></ArticleForm>
-
             </div>
         )
     }
-
 }

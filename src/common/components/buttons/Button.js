@@ -1,9 +1,9 @@
 import React from 'react';
 import Radium from 'radium';
 /*Styles*/
-import colors from '../../../../settings/colors.js';
-import elements from '../../../../settings/elements.js';
-import typography from '../../../../settings/typography.js';
+import colors from '../settings/colors.js';
+import elements from '../settings/elements.js';
+import typography from '../settings/typography.js';
 
 class Button extends React.Component {
     constructor(props) {
@@ -13,7 +13,8 @@ class Button extends React.Component {
     render() {
         return (
             <div id="ButtonWrapper" style={[styles.wrapper]}>
-                <button key="articleBtn"
+                {/*binding this from DOM environment to the Component.:: - ES7 */}
+                <button key="articleBtn" onClick={this.props.click}
                         style={[styles.base,
                         styles[this.props.type],
                         styles[this.props.size],
