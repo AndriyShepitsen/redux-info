@@ -1,10 +1,8 @@
-# Isomorphic Redux App
+# ReactJs. Best Practices for Personal Webapps (Redux Implementations)
+Code examples for [video tutorial](https://www.youtube.com/playlist?list=PLPgDBCA1Cb3Ngjpo21aFkdqVT2H0fZu3W)
 
-[![build status](https://travis-ci.org/caljrimmer/isomorphic-redux-app.svg?branch=master&style=flat-square)](https://travis-ci.org/caljrimmer/isomorphic-redux-app)
-
-This project serves as a **simple** boilerplate to start building an isomorphic rendering application in React and Redux.
-
-<img src="http://g.recordit.co/iChc7ZH3H1.gif" width="728" />
+[This link](http://example.net/) has no title attribute.
+# Start
 
 # Features
 
