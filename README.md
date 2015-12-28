@@ -1,7 +1,7 @@
 # ReactJs. Best Practices for Personal Webapps (Redux Implementations)
 Code examples for [video tutorial](https://www.youtube.com/playlist?list=PLPgDBCA1Cb3Ngjpo21aFkdqVT2H0fZu3W)
 
-[This link](http://example.net/) has no title attribute.
+Initial project boilerplate [https://github.com/caljrimmer/isomorphic-redux-app](https://github.com/caljrimmer/isomorphic-redux-app) has no title attribute.
 # Start
 
 # Features
