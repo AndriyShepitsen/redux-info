@@ -37,7 +37,8 @@ const middlewareBuilder = () => {
                 reduxReactRouter({
                     createHistory
                 }),
-                devTools()
+                devTools(),
+                window.devToolsExtension()
             ]
         }
     } else {
