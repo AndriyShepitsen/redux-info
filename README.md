@@ -1,19 +1,18 @@
 # ReactJs. Best Practices for Personal Webapps (Redux Implementations)
-Code examples for [video tutorial](https://www.youtube.com/playlist?list=PLPgDBCA1Cb3Ngjpo21aFkdqVT2H0fZu3W)
+Code examples for our [video tutorials](https://www.youtube.com/playlist?list=PLPgDBCA1Cb3Ngjpo21aFkdqVT2H0fZu3W)
 
-Initial project boilerplate [https://github.com/caljrimmer/isomorphic-redux-app](https://github.com/caljrimmer/isomorphic-redux-app) has no title attribute.
-# Start
+Initial project boilerplate [https://github.com/caljrimmer/isomorphic-redux-app](https://github.com/caljrimmer/isomorphic-redux-app) 
 
 # Features
-
 - Async server-side rendering
 - Hot reloading middleware
-- Redux DevTools and Logging
+- Redux DevTools and Logging (via Chrome extension and devtools.js configuration)
 - Redux Routing
 - Reddit API example
 - Counter example
 - Todo example
 - Static content example
+- CRUD of Blog articles
 
 ## Stack
 
