@@ -1,7 +1,7 @@
 {
   "name": "isomorphic-redux-app",
   "version": "0.1.1",
-  "description": "An example of a isomorphic Redux application",
+  "description": "React.js boilerplate with Redux Design pattern!",
   "scripts": {
     "slate": "rimraf -rf node_modules && npm install",
     "clean": "rimraf -rf dist",
